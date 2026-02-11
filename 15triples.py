@@ -1,8 +1,9 @@
 import math
 
-for i in range(1, 100):
-	a = i
-	for n in range (1, 100):
-	    b = n
-	    hypo = math.sqrt(a ** 2 + b ** 2)
-	    if hypo % 1 == 0: print(a, b, hypo)
+for a in range(1, 20):
+	
+	
+	for b in range(1, 20):
+		c = math.sqrt(a**2 + b**2)
+		if math.isclose(c % 1, 0):
+			print(a, b, c)
